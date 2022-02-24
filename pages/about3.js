@@ -1,7 +1,7 @@
 import AboutMadlibWord3 from "../component/AboutMadlibWord3";
 import { useState, useRef, useEffect } from "react";
 
-function useMousee() {
+function UseMouse() {
   const [mPosition, setMPosition] = useState({
     x: null,
     y: null,
@@ -25,7 +25,7 @@ function useMousee() {
 }
 
 const about3 = () => {
-  const { x, y, mx, my } = useMousee();
+  const { x, y, mx, my } = UseMouse();
 
   const madWords1 = ["industry leading", "plant based", "future proof"];
   const madWords2 = ["exploring", "inspiring", "navigating"];
