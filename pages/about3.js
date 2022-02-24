@@ -1,10 +1,29 @@
 import AboutMadlibWord3 from "../component/AboutMadlibWord3";
 import { useState, useEffect } from "react";
-import useMouse from "../hooks/useMouse";
+// import useMouse from "../hooks/useMouse";
 
 const about3 = () => {
-  // eslint-disable-line
-  const { x, y, mx, my } = useMouse();
+  const [mPosition, setMPosition] = useState({
+    x: null,
+    y: null,
+    mx: null,
+    my: null,
+  });
+
+  useEffect(() => {
+    function handle(e) {
+      setMPosition({
+        x: e.pageX,
+        y: e.pageY,
+        mx: e.movementX,
+        my: e.movementY,
+      });
+    }
+    document.addEventListener("mousemove", handle);
+    return () => document.removeEventListener("mousemove", handle);
+  });
+
+  const mx = mPosition.mx;
 
   const madWords1 = ["industry leading", "plant based", "future proof"];
   const madWords2 = ["exploring", "inspiring", "navigating"];
@@ -22,9 +41,7 @@ const about3 = () => {
   const [sTime, setSTime] = useState(mx);
 
   useEffect(() => {
-    // eslint-disable-line
     const interval = setInterval(() => {
-      // eslint-disable-line
       setSTime(mx);
     }, 14);
     return () => clearInterval(interval);
