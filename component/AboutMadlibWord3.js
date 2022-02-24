@@ -11,7 +11,7 @@ const AboutMadlibWord3 = ({ textColor, madWords }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSTime(mx);
-    }, 14);
+    }, 20);
     return () => clearInterval(interval);
   }, [mx]);
 
