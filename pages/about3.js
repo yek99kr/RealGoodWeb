@@ -11,7 +11,7 @@ const about3 = () => {
   });
 
   useEffect(() => {
-    function handle(e) {
+    function usehandle(e) {
       setMPosition({
         x: e.pageX,
         y: e.pageY,
@@ -20,7 +20,7 @@ const about3 = () => {
       });
     }
     document.addEventListener("mousemove", handle);
-    return () => document.removeEventListener("mousemove", handle);
+    return () => document.removeEventListener("mousemove", usehandle);
   });
 
   const mx = mPosition.mx;
