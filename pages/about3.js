@@ -1,6 +1,5 @@
 import AboutMadlibWord3 from "../component/AboutMadlibWord3";
 import { useState, useEffect } from "react";
-// import useMouse from "../hooks/useMouse";
 
 const about3 = () => {
   // const [mPosition, setMPosition] = useState({
