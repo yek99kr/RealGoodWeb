@@ -25,7 +25,7 @@ const useMouse = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setSTime(mPosition.mx);
-    }, 13);
+    }, 12);
     return () => clearInterval(interval);
   }, [mPosition.mx]);
 

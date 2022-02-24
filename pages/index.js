@@ -42,7 +42,7 @@ export default function Home() {
           </a>
         </Link>
         <p className="inline">
-          Words changing randomly on mousemove, changing speed: 14 millisec
+          Words changing randomly on mousemove, changing speed: 12 millisec
         </p>
       </div>
     </div>
