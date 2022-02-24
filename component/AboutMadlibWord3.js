@@ -4,16 +4,16 @@ import useMouse from "../hooks/useMouse";
 const AboutMadlibWord3 = ({ textColor, madWords }) => {
   const [mad, setMad] = useState(madWords[0]);
 
-  const sTime = useMouse();
+  const { x, y, mx, my } = useMouse();
 
-  // const [sTime, setSTime] = useState(1);
+  const [sTime, setSTime] = useState(mx);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setSTime(mx);
-  //   }, 20);
-  //   return () => clearInterval(interval);
-  // }, [mx]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSTime(mx);
+    }, 12);
+    return () => clearInterval(interval);
+  }, [mx]);
 
   useEffect(() => {
     setMad(madWords[Math.floor(Math.random() * 2)]);

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const useMouse = () => {
-  const [sTime, setSTime] = useState(1);
   const [mPosition, setMPosition] = useState({
     x: null,
     y: null,
@@ -22,14 +21,7 @@ const useMouse = () => {
     return () => document.removeEventListener("mousemove", handle);
   });
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSTime(mPosition.mx);
-    }, 12);
-    return () => clearInterval(interval);
-  }, [mPosition.mx]);
-
-  return sTime;
+  return mPosition;
 };
 
 export default useMouse;
