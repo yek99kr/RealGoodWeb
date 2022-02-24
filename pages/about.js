@@ -1,5 +1,4 @@
 import AboutMadlibWord from "../component/AboutMadlibWord";
-import { useState } from "react";
 
 const about = () => {
   const madWords1 = ["industry leading", "plant based", "future proof"];
@@ -14,8 +13,6 @@ const about = () => {
   const madWords10 = ["inspire", "visualize", "live"];
   const madWords11 = ["educate", "laugh", "communicate"];
   const madWords12 = ["convert", "emote", "love"];
-
-  //   word[Math.floor(Math.random()*word.length)]
 
   return (
     <div className="bg-gray-200 h-[100vh] w-full">
@@ -45,7 +42,6 @@ const about = () => {
         and{" "}
         <AboutMadlibWord textColor={"text-[#ee341b]"} madWords={madWords12} />.
       </p>
-      {/* <AboutMadlibWord words={"hello"} /> */}
     </div>
   );
 };

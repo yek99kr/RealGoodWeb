@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 
-const AboutMadlibWord3 = ({ textColor, madWords, mx, my }) => {
+const AboutMadlibWord3 = ({ textColor, madWords, mx }) => {
   const [mad, setMad] = useState(madWords[0]);
-
-  const [showDropdown, setShowDropdown] = useState(false);
   // const [dropdownColor1, setdropdownColor1] = useState("text-black");
   // const [dropdownColor2, setdropdownColor2] = useState("text-black");
   // const [dropdownColor3, setdropdownColor3] = useState("text-black");
@@ -11,8 +9,6 @@ const AboutMadlibWord3 = ({ textColor, madWords, mx, my }) => {
   //   // Your custom logic here
   //   setMad(madWords[Math.floor(Math.random() * 2)]);
   // }, 1000);
-
-  const [changeTime, setChangeTime] = useState(3000);
 
   useEffect(() => {
     setMad(madWords[Math.floor(Math.random() * 2)]);

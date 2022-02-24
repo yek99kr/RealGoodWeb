@@ -15,7 +15,7 @@ const about2 = () => {
   const madWords11 = ["educate", "laugh", "communicate"];
   const madWords12 = ["convert", "emote", "love"];
 
-  const [changeTime, setChangeTime] = useState(2300);
+  const changeTime = 2300;
 
   //   word[Math.floor(Math.random()*2)]
 
