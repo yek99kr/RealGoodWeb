@@ -11,6 +11,7 @@ const AboutMadlibWord3 = ({ textColor, madWords, mx }) => {
   // }, 1000);
 
   useEffect(() => {
+    // eslint-disable-line
     setMad(madWords[Math.floor(Math.random() * 2)]);
   }, [mx]);
 
