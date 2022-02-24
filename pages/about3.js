@@ -1,8 +1,8 @@
 import AboutMadlibWord3 from "../component/AboutMadlibWord3";
-import { useState, useRef, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function useMouse() {
-  const [mPosition, setMPosition] = useState({
+  const [usePosition, setMPosition] = useState({
     x: null,
     y: null,
     mx: null,
@@ -21,7 +21,8 @@ function useMouse() {
     document.addEventListener("mousemove", handle);
     return () => document.removeEventListener("mousemove", handle);
   });
-  return mPosition;
+
+  return usePosition;
 }
 
 const about3 = () => {
@@ -52,7 +53,7 @@ const about3 = () => {
   return (
     <div className="bg-gray-200 h-[100vh] w-full">
       <p className="font-[600] text-[6.2vw] leading-[1.15] pt-2 pr-3 pl-6 ">
-        We're Real Good. We're a<br></br>
+        We&#39;re Real Good. We&#39;re a<br></br>
         <AboutMadlibWord3
           textColor={"text-[#2a94ff]"}
           madWords={madWords1}

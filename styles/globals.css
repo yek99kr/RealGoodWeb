@@ -17,3 +17,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.fontsize {
+  font-size: 0.975rem;
+  line-height: 1.25rem;
+  cursor: pointer;
+}
+/* .fontsize:hover {
+  color: blue;
+} */

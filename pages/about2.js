@@ -22,7 +22,7 @@ const about2 = () => {
   return (
     <div className="bg-gray-200 h-[100vh] w-full">
       <p className="font-[600] text-[6.2vw] leading-[1.15] pt-2 pr-3 pl-6 ">
-        We're Real Good. We're a<br></br>
+        We&#39;re Real Good. We&#39;re a<br></br>
         <AboutMadlibWord2
           textColor={"text-[#2a94ff]"}
           madWords={madWords1}

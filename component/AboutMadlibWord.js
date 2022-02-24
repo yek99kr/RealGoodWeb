@@ -13,15 +13,15 @@ const AboutMadlibWord = ({ textColor, madWords }) => {
       onMouseEnter={() => setShowDropdown(true)}
       onMouseLeave={() => setShowDropdown(false)}
     >
-      <span className={`${textColor} cursor-pointer `}>{mad}</span>
+      <span className={`cursor-pointer ${textColor}`}>{mad}</span>
 
       {showDropdown && (
-        <>
+        <span>
           <span
             onClick={() => setMad(madWords[0])}
             onMouseEnter={() => setdropdownColor1(`${textColor}`)}
             onMouseLeave={() => setdropdownColor1("text-black")}
-            className={`${dropdownColor1} cursor-pointer text-sm `}
+            className={`text-[5px] ${dropdownColor1}  fontsize`}
           >
             {" "}
             ({madWords[0]}){" "}
@@ -30,7 +30,7 @@ const AboutMadlibWord = ({ textColor, madWords }) => {
             onClick={() => setMad(madWords[1])}
             onMouseEnter={() => setdropdownColor2(`${textColor}`)}
             onMouseLeave={() => setdropdownColor2("text-black")}
-            className={`${dropdownColor2} cursor-pointer text-sm`}
+            className={`${dropdownColor2}  fontsize`}
           >
             {" "}
             ({madWords[1]}){" "}
@@ -39,12 +39,12 @@ const AboutMadlibWord = ({ textColor, madWords }) => {
             onClick={() => setMad(madWords[2])}
             onMouseEnter={() => setdropdownColor3(`${textColor}`)}
             onMouseLeave={() => setdropdownColor3("text-black")}
-            className={`${dropdownColor3} cursor-pointer text-sm`}
+            className={`${dropdownColor3} cursor-pointer fontsize`}
           >
             {" "}
             ({madWords[2]}){" "}
           </span>
-        </>
+        </span>
       )}
     </span>
   );
