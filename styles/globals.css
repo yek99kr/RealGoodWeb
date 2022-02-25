@@ -26,3 +26,10 @@ a {
 /* .fontsize:hover {
   color: blue;
 } */
+
+select {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 96%);
+}
