@@ -86,6 +86,20 @@ export default function Home() {
           medium
         </p>
       </div>
+
+      <div
+        className="
+      p-5 "
+      >
+        <Link href="/about6">
+          <a>
+            <span className="font-[600] text-6xl p-5">About6</span>
+          </a>
+        </Link>
+        <p className="inline">
+          Madlibs with Dropdown + Random on mousemove before clicked, Size: big
+        </p>
+      </div>
     </div>
   );
 }

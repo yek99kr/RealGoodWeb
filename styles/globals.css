@@ -30,6 +30,6 @@ a {
 select {
   cursor: pointer;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: hsl(0, 0%, 96%);
 }
